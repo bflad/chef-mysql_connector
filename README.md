@@ -40,5 +40,4 @@ Provided via LWRP because requires installation path.
     
     include_recipe "mysql-connector"
     mysql_connector_j "/path/to/install/location"
-
-
+    
