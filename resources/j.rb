@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: mysql_connector
-# Recipe:: default
+# Resource:: j
 #
 # Copyright 2012
 #
@@ -17,4 +17,11 @@
 # limitations under the License.
 #
 
-# This recipe intentionally blank for including LWRPs in your cookbook.
+actions :create
+
+attribute :path, :kind_of => String, :name_attribute => true
+
+def initialize(*args)
+  super
+  @action = :create
+end
