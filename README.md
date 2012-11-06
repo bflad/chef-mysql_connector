@@ -37,6 +37,7 @@ Provided via LWRP because requires installation path.
 
 * Add `depends "mysql_connector"` to cookbook metadata
 * Add to cookbook recipe:
+
 ```ruby
 include_recipe "mysql-connector"
 mysql_connector_j "/path/to/install/location"
