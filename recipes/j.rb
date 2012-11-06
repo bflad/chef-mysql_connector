@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: mysql_connector
-# Provider:: j
+# Recipe:: j
 #
 # Copyright 2012
 #
@@ -17,13 +17,6 @@
 # limitations under the License.
 #
 
-action :create do
-  ark "mysql-connector-java" do
-    url node['mysql_connector']['j']['url']
-    checksum node['mysql_connector']['j']['checksum']
-    creates "mysql-connector-java-#{node['mysql_connector']['j']['version']}-bin.jar"
-    path new_resource.path
-    action :cherry_pick
-  end
-  new_resource.updated_by_last_action(true)
+node['mysql_connector']['j']['install_paths'].each do |path|
+  mysql_connector_j path
 end

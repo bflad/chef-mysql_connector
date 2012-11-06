@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
+default['mysql_connector']['j']['install_paths'] = []
 default['mysql_connector']['j']['version']  = "5.1.21"
 default['mysql_connector']['j']['url']      = "http://cdn.mysql.com/Downloads/Connector-J/mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz"
 default['mysql_connector']['j']['checksum'] = "cc8ab9ddb20f2acb2900c4bb5a6dd63e714ddfe88d5ceefcc106c39cfeda7a76"
