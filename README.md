@@ -10,16 +10,13 @@ Recipes/LWRPs for installing MySQL Connectors.
 
 * RedHat 6.3 (Santiago)
 
-### Cookbooks
-
-* ark
-
 ## Attributes
 
 * `node['mysql_connector']['j']['install_paths']` - Array of MySQL Connector/J
   installation paths, defaults to []
 * `node['mysql_connector']['j']['version']` - Version of MySQL Connector/J to
-  install.
+* `node['mysql_connector']['j']['jar_file']` - filename of MySQL Connector/J .jar, defaults to `mysql-connector-java-#{node['mysql_connector']['j']['version']}-bin.jar`
+* `node['mysql_connector']['j']['tar_file']` - filename of MySQL Connector/J .tar.gz, defaults to `mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz`
 * `node['mysql_connector']['j']['url']` - URL for MySQL Connector/J, defaults to
   "http://cdn.mysql.com/Downloads/Connector-J/mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz"
 * `node['mysql_connector']['j']['checksum']` - SHA256 checksum for MySQL
@@ -58,7 +55,7 @@ Please use standard Github issues/pull requests.
       
 Author:: Brian Flad (<bflad@wharton.upenn.edu>)
 
-Copyright:: 2012
+Copyright:: 2012-2013
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
