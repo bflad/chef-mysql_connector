@@ -2,7 +2,7 @@
 # Cookbook Name:: mysql_connector
 # Attributes:: default
 #
-# Copyright 2012
+# Copyright 2012-2013
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -18,6 +18,6 @@
 #
 
 default['mysql_connector']['j']['install_paths'] = []
-default['mysql_connector']['j']['version']  = "5.1.21"
+default['mysql_connector']['j']['version']  = "5.1.22"
 default['mysql_connector']['j']['url']      = "http://cdn.mysql.com/Downloads/Connector-J/mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz"
-default['mysql_connector']['j']['checksum'] = "cc8ab9ddb20f2acb2900c4bb5a6dd63e714ddfe88d5ceefcc106c39cfeda7a76"
+default['mysql_connector']['j']['checksum'] = "07245b54002cab2a7d6a8635f9b57af2d88f8183b61ad27d3f094b56e5ddbf93"
