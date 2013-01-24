@@ -40,7 +40,7 @@ action :create do
 
   execute "mysql-connector-java-#{new_resource.path}" do
     cwd Chef::Config[:file_cache_path]
-    command "tar --strip-components=1 -xzf #{node['mysql_connector']['j']['tar_file']} -C #{new_resource.path} #{node['mysql_connector']['j']['jar_file']}"
+    command "tar --strip-components=1 -xzf #{node['mysql_connector']['j']['tar_file']} -C #{new_resource.path} mysql-connector-java-#{node['mysql_connector']['j']['version']}/#{node['mysql_connector']['j']['jar_file']}"
     creates "#{new_resource.path}/#{node['mysql_connector']['j']['jar_file']}"
     action :run
   end

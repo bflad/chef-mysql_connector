@@ -1,3 +1,7 @@
+## v0.3.1
+
+* Fix for J jar extraction
+
 ## v0.3.0
 
 * Workaround MySQL Connector/J .tar.gz now including extra directory in archive
