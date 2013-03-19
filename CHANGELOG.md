@@ -1,3 +1,7 @@
+## v0.4.0
+
+* Updated J default version to 5.1.24
+
 ## v0.3.1
 
 * Fix for J jar extraction
