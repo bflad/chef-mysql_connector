@@ -22,5 +22,5 @@ default['mysql_connector']['j']['version']  = "5.1.26"
 default['mysql_connector']['j']['jar_file'] = "mysql-connector-java-#{node['mysql_connector']['j']['version']}-bin.jar"
 default['mysql_connector']['j']['tar_file'] = "mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz"
 default['mysql_connector']['j']['url']      = "http://cdn.mysql.com/Downloads/Connector-J/#{node['mysql_connector']['j']['tar_file']}"
-default['mysql_connector']['j']['checksum'] = "1a7af1458f9a615802a17e3a2f07b942"
+default['mysql_connector']['j']['checksum'] = "fade4caa398c41f537d9b7bcaf83aabaa1eab1ef23c81de49979b5b04ba395bd"
 					       
