@@ -1,3 +1,7 @@
+## v0.4.1
+
+* Updated J default version to 5.1.26
+
 ## v0.4.0
 
 * Updated J default version to 5.1.24
