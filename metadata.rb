@@ -12,6 +12,6 @@ recipe            "mysql_connector::odbc_package", "Installs MySQL Connector/ODB
 #  depends d
 #end
 
-%w{ redhat }.each do |os|
+%w{ redhat ubuntu }.each do |os|
   supports os
 end
