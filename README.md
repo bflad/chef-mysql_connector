@@ -9,6 +9,7 @@ Recipes/LWRPs for installing MySQL Connectors.
 ### Platforms
 
 * RedHat 6.3 (Santiago)
+* Ubuntu 12.04 LTS (Precise Pangolin)
 
 ## Attributes
 
