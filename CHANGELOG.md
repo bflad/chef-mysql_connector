@@ -1,3 +1,7 @@
+## 0.5.0
+
+* Version bump to add metadata supports amazon, centos, fedora, scientific, ubuntu
+
 ## v0.4.1
 
 * Updated J default version to 5.1.26
