@@ -1,6 +1,6 @@
 name              "mysql_connector"
 maintainer        "Brian Flad"
-maintainer_email  "bflad@wharton.upenn.edu"
+maintainer_email  "bflad417@gmail.com"
 license           "Apache 2.0"
 description       "Recipes/LWRPs for installing MySQL Connectors."
 version           "0.5.0"

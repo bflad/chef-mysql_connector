@@ -53,8 +53,8 @@ mysql_connector_j "/path/to/install/location"
 Please use standard Github issues/pull requests.
 
 ## License and Author
-      
-Author:: Brian Flad (<bflad@wharton.upenn.edu>)
+
+Author:: Brian Flad (<bflad417@gmail.com>)
 
 Copyright:: 2012-2013
 
