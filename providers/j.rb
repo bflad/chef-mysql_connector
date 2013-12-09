@@ -44,6 +44,6 @@ action :create do
     creates "#{new_resource.path}/#{node['mysql_connector']['j']['jar_file']}"
     action :run
   end
-  
+
   new_resource.updated_by_last_action(true)
 end
