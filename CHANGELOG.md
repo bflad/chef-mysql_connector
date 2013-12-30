@@ -1,3 +1,7 @@
+## 0.5.1
+
+* Bugfix: [GH-3] No action remote_file mysql-connector-java-x.x.x.tar.gz
+
 ## 0.5.0
 
 * Version bump to add metadata supports amazon, centos, fedora, scientific, ubuntu
