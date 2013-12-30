@@ -35,7 +35,7 @@ action :create do
     source node['mysql_connector']['j']['url']
     checksum node['mysql_connector']['j']['checksum']
     mode 00644
-    action :create_if_missing
+    action :create
   end
 
   execute "mysql-connector-java-#{new_resource.path}" do
