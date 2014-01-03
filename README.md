@@ -18,6 +18,7 @@ Recipes/LWRPs for installing MySQL Connectors.
 * `node['mysql_connector']['j']['version']` - Version of MySQL Connector/J to
 * `node['mysql_connector']['j']['jar_file']` - filename of MySQL Connector/J .jar, defaults to `mysql-connector-java-#{node['mysql_connector']['j']['version']}-bin.jar`
 * `node['mysql_connector']['j']['tar_file']` - filename of MySQL Connector/J .tar.gz, defaults to `mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz`
+* `node['mysql_connector']['j']['archive_url']` - Archive URL for MySQL Connector/J, defaults to `http://cdn.mysql.com/archives/mysql-connector-java-5.1/#{node['mysql_connector']['j']['tar_file']}`
 * `node['mysql_connector']['j']['url']` - URL for MySQL Connector/J, defaults to
   "http://cdn.mysql.com/Downloads/Connector-J/mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz"
 * `node['mysql_connector']['j']['checksum']` - SHA256 checksum for MySQL
