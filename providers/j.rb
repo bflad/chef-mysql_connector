@@ -13,7 +13,7 @@ action :create do
   #
 
   remote_file "#{Chef::Config[:file_cache_path]}/#{node['mysql_connector']['j']['tar_file']}" do
-    source node['mysql_connector']['j']['url']
+    source [node['mysql_connector']['j']['url'], node['mysql_connector']['j']['archive_url']]
     checksum node['mysql_connector']['j']['checksum']
     mode 00644
     action :create
