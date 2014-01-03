@@ -1,3 +1,9 @@
+## 0.6.0
+
+* Enhancement: New `node['mysql_connector']['j']['archive_url']` attribute and fallback to archive URL downloading (once remote_file actually skips 404's)
+* Enhancement: Checksum attribute auto-detection
+* Enhancement: Update J default version to 5.1.28
+
 ## 0.5.1
 
 * Bugfix: [GH-3] No action remote_file mysql-connector-java-x.x.x.tar.gz
