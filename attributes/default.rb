@@ -1,4 +1,4 @@
-default['mysql_connector']['j']['version'] = '5.1.26'
+default['mysql_connector']['j']['version'] = '5.1.28'
 
 default['mysql_connector']['j']['checksum'] =
   case node['mysql_connector']['j']['version']
