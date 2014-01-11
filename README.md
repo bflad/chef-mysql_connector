@@ -6,6 +6,10 @@ Recipes/LWRPs for installing MySQL Connectors.
 
 ## Requirements
 
+### Chef
+
+* Chef 11+ is required for version 0.6.0+ of this cookbook
+
 ### Platforms
 
 * CentOS 5+
