@@ -1,3 +1,7 @@
+## 0.7.0
+
+* Enhancement: Update J default version to 5.1.29
+
 ## 0.6.0
 
 * Enhancement: New `node['mysql_connector']['j']['archive_url']` attribute and fallback to archive URL downloading (once remote_file actually skips 404's)
