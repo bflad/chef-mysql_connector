@@ -1,3 +1,7 @@
+## 0.7.1
+
+* Bugfix: Workaround remote_file not supporting 404's and utilize archive_url
+
 ## 0.7.0
 
 * Enhancement: Update J default version to 5.1.29
