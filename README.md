@@ -29,7 +29,7 @@ install_paths | MySQL Connector/J installation paths | Array of Strings | []
 jar_file | Filename of MySQL Connector/J .jar | String | `mysql-connector-java-#{node['mysql_connector']['j']['version']}-bin.jar`
 tar_file | Filename of MySQL Connector/J .tar.gz | String | `mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz`
 url | URL for MySQL Connector/J | String | `http://cdn.mysql.com/Downloads/Connector-J/mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz`
-version | Version of MySQL Connector/J to install | String | 5.1.29
+version | Version of MySQL Connector/J to install | String | 5.1.31
 
 ## Recipes
 
