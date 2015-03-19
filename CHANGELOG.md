@@ -1,3 +1,7 @@
+## 0.7.3
+
+* Update J default version to 5.1.34
+
 ## 0.7.2
 
 * Update J default version to 5.1.31
