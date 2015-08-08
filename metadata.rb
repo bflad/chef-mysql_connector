@@ -8,9 +8,8 @@ recipe 'mysql_connector', 'Empty recipe'
 recipe 'mysql_connector::j', 'Installs MySQL Connector/J via attribute.'
 recipe 'mysql_connector::odbc_package', 'Installs MySQL Connector/ODBC via package.'
 
-# %w{ ark }.each do |d|
-#  depends d
-# end
+# strip_components added
+depends 'ark', '>= 0.7.2'
 
 %w(amazon centos fedora redhat scientific ubuntu).each do |os|
   supports os
