@@ -35,7 +35,6 @@ version | Version of MySQL Connector/J to install | String | 5.1.36
 
 * `recipe[mysql_connector]` empty recipe for including LWRPs
 * `recipe[mysql_connector::j]` will install MySQL Connector/J from attribute
-* `recipe[mysql_connector::odbc_package]` will install MySQL Connector/ODBC from package.
 
 ## Usage
 
