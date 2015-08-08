@@ -20,24 +20,6 @@ action :create do
     action :create
   end
 
-  # BEGIN: This is workaround for remote_file not supporting 404's
-  # This is after various attempts at begin/rescue and requires ignore_failure above.
-  remote_file "#{Chef::Config[:file_cache_path]}/#{node['mysql_connector']['j']['tar_file']}-archive_url" do
-    source node['mysql_connector']['j']['archive_url']
-    checksum node['mysql_connector']['j']['checksum']
-    mode 00644
-    not_if "test -s #{Chef::Config[:file_cache_path]}/#{node['mysql_connector']['j']['tar_file']}"
-    action :create
-  end
-
-  execute 'mysql_connector_j_mv_archive_url' do
-    cwd Chef::Config[:file_cache_path]
-    command "mv #{node['mysql_connector']['j']['tar_file']}-archive_url #{node['mysql_connector']['j']['tar_file']}"
-    not_if "test -s #{Chef::Config[:file_cache_path]}/#{node['mysql_connector']['j']['tar_file']}"
-    action :run
-  end
-  # END: This is workaround for remote_file not supporting 404's
-
   execute "mysql-connector-java-#{new_resource.path}" do
     cwd Chef::Config[:file_cache_path]
     command "tar --strip-components=1 -xzf #{node['mysql_connector']['j']['tar_file']} -C #{new_resource.path} mysql-connector-java-#{node['mysql_connector']['j']['version']}/#{node['mysql_connector']['j']['jar_file']}"
