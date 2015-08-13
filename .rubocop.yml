@@ -8,6 +8,7 @@ AllCops:
     - test/**/*
     - vendor/**/*
     - ruby/**/*
+    - Vagrantfile*.rb
 
 AlignParameters:
   Enabled: false

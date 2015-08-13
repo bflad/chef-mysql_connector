@@ -26,7 +26,7 @@ def version
 end
 
 def version_checksum
-	new_resource.checksum || 
+  new_resource.checksum ||
     case version
     when /^5.0/ then version_checksum_5_0
     when /^5.1/ then version_checksum_5_1
@@ -41,6 +41,7 @@ def version_checksum_5_0
   end
 end
 
+# rubocop:disable Metrics/CyclomaticComplexity
 def version_checksum_5_1
   case version
   when '5.1.26' then 'fade4caa398c41f537d9b7bcaf83aabaa1eab1ef23c81de49979b5b04ba395bd'
@@ -57,6 +58,7 @@ def version_checksum_5_1
   else version_checksum_not_found
   end
 end
+# rubocop:enable Metrics/CyclomaticComplexity
 
 def version_checksum_not_found
   Chef::Log.warn <<-EOM
@@ -97,7 +99,7 @@ def version_url_archives
 end
 
 def version_url_not_found
-  raise <<-EOM
+  fail <<-EOM
 
     Configuration error: URL for mysql_connector_j version: #{version}
       * Not auto-detected by provider
