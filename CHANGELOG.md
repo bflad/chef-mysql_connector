@@ -1,3 +1,8 @@
+## 0.8.0
+
+* Enhancement: [#13][]: Use the archive_url for all downloads
+  * Also switches back to using ark dependency for simplicity
+
 ## 0.7.4
 
 * Update J default version to 5.1.36
@@ -62,3 +67,5 @@
 ## v0.1.0
 
 * Initial release with MySQL Connector/J LWRP.
+
+[#13]: https://github.com/bflad/chef-mysql_connector/issues/13
