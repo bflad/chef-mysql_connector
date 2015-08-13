@@ -1,0 +1,33 @@
+---
+driver_config:
+  customize:
+    memory: 1024
+  vagrantfiles:
+  - Vagrantfile.cachier.rb
+
+driver_plugin: vagrant
+
+provisioner:
+  chef_omnibus_install_options: -d /tmp/vagrant-cache/vagrant_omnibus
+  name: chef_zero
+  require_chef_omnibus: true
+  # require_chef_omnibus: 12.4.1
+
+platforms:
+- name: chef/centos-6.6
+- name: chef/centos-7.1
+- name: chef/debian-8.0
+- name: chef/fedora-21
+- name: chef/freebsd-10.0
+- name: chef/ubuntu-14.04
+- name: chef/ubuntu-15.04
+
+suites:
+- name: default
+  run_list:
+  - recipe[mysql_connector::j]
+  attributes:
+    mysql_connector:
+      j:
+        install_paths:
+        - /tmp

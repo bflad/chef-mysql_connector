@@ -23,12 +23,11 @@ These attributes are under the `node['mysql_connector']['j']` namespace.
 
 Attribute | Description | Type | Default
 ----------|-------------|------|--------
-archive_url | Archive URL for MySQL Connector/J | String | `http://cdn.mysql.com/archives/mysql-connector-java-5.1/#{node['mysql_connector']['j']['tar_file']}`
-checksum | SHA256 checksum for MySQL Connector/J | String | auto-detected (see attributes/default.rb)
+checksum | SHA256 checksum for MySQL Connector/J | String | auto-detected or will log WARN
 install_paths | MySQL Connector/J installation paths | Array of Strings | []
 jar_file | Filename of MySQL Connector/J .jar | String | `mysql-connector-java-#{node['mysql_connector']['j']['version']}-bin.jar`
 tar_file | Filename of MySQL Connector/J .tar.gz | String | `mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz`
-url | URL for MySQL Connector/J | String | `http://cdn.mysql.com/Downloads/Connector-J/mysql-connector-java-#{node['mysql_connector']['j']['version']}.tar.gz`
+url | URL for MySQL Connector/J | String | auto-detected between `http://cdn.mysql.com/Downloads/Connector-J/#{tar_file}` and `http://cdn.mysql.com/archives/mysql-connector-java-5.1/#{tar_file}`
 version | Version of MySQL Connector/J to install | String | 5.1.36
 
 ## Recipes

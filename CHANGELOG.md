@@ -1,4 +1,12 @@
+## 0.8.1
+
+* Bugfix: Correctly handle testing both latest and archives URLs
+* Bugfix: Revert ark dependency
+* Enhancement: Add J 5.0.8 checksum
+
 ## 0.8.0
+
+Please note: this release is broken - use a newer version.
 
 * Enhancement: [#13][]: Use the archive_url for all downloads
   * Also switches back to using ark dependency for simplicity
