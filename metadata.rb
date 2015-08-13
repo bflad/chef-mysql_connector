@@ -3,10 +3,9 @@ maintainer 'Brian Flad'
 maintainer_email 'bflad417@gmail.com'
 license 'Apache 2.0'
 description 'Recipes/LWRPs for installing MySQL Connectors.'
-version '0.7.4'
+version '0.8.0'
 recipe 'mysql_connector', 'Empty recipe'
 recipe 'mysql_connector::j', 'Installs MySQL Connector/J via attribute.'
-recipe 'mysql_connector::odbc_package', 'Installs MySQL Connector/ODBC via package.'
 
 # strip_components added
 depends 'ark', '>= 0.7.2'
